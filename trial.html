@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="trial.css">
+        <meta name="viewport" content="width=device-wdth, initial-scale=0.82">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       <nav>
+        <label class="menu" id="menu" onclick="menushow()" ><i class="fas fa-bars"></i></label>
+        <label class="menuclose" id="menuclose" onclick="menuhide()"><i class="fa fa-close"></i></label>
+        <label class="logo">gamersgarage</label>
+            <ul  id="show">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">POST</a></li>
+                <li><a href="#">MESSAGE</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">TAGS</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function menushow()
+            {
+                document.getElementById("show").style.display="block";
+                document.getElementById("menu").style.display="none";
+                document.getElementById("menuclose").style.display="block";
+            }
+            function menuhide()
+            {
+                document.getElementById("show").style.display="none";
+                document.getElementById("menu").style.display="block";
+                document.getElementById("menuclose").style.display="none";
+            }
+        
+        </script>
+    </body>
+</html>
